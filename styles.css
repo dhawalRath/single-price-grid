@@ -1,0 +1,168 @@
+/* 
+code by - Dhawal (@dhawalRath)
+Date - 17th April 2021
+*/
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* CSS reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* colors */
+:root{
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  color: var(--light-gray);
+  line-height: 1.5;
+  background-color: var(--light-gray);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1{font-size: 2rem;}
+h2{font-size: 1.5rem;}
+h3{font-size: 1.125rem;}
+h4{font-size: 1rem;}
+
+ul li{
+  list-style: none;
+  font-size: 0.85rem;
+}
+
+.container{
+  display: grid;
+  grid-template: 
+  "box1 box1" auto
+  "box2 box3" 1fr
+  / 1fr 1fr;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-1{
+  grid-area: box1;
+  background-color: #fff;
+  color: var(--grayish-blue);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-1 h2{
+  color: var(--cyan);
+}
+
+.card-1 h3{
+  color: var(--bright-yellow);
+}
+
+.card-2{
+  grid-area: box2;
+  background-color: var(--cyan);
+  border-bottom-left-radius: 0.5rem;
+}
+
+.card-3{
+  grid-area: box3;
+  background-color: var(--cyan);
+  opacity: 0.75;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.card{
+  padding: 2rem;
+}
+
+.chip{
+  display: flex;
+  align-items: center;
+}
+
+.chip .month{
+  padding-left: 0.8rem;
+  opacity: 0.75;
+}
+
+.btn{
+  border: none;
+  cursor: pointer;
+  color: var(--light-gray);
+  background-color: var(--bright-yellow);
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.35rem;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mb-0{
+  margin-bottom: 0.5rem;
+}
+
+.mb-1{
+  margin-bottom: 1rem;
+}
+
+.mb-2{
+  margin-bottom: 2rem;
+}
+
+.mt-0{
+  margin-top: 0.5rem;
+  padding-right: 4rem;
+}
+
+
+
+/* Media-mobile-version */
+@media(max-width: 650px){
+  body{
+    height: 100%;
+  }
+
+  .container{
+    grid-template: 
+    "box1" auto
+    "box2" auto
+    "box3" auto
+    / auto;
+    margin: 4rem 1.5rem;
+    max-width: 327px;
+  }
+
+  .card-1 h2{
+    font-size: 1.35rem;
+    margin-top: -0.5rem;
+  }
+  
+  .card-1 h3{
+    font-size: 1rem;
+  }
+
+  .card-2{
+    border-radius: 0;
+  }
+
+  .card-3{
+  border-bottom-left-radius: 0.5rem;
+  }
+
+  .mt-0{
+    padding-right: 0;
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+
+  br{display: none;}
+}
