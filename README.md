@@ -21,7 +21,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- Live Site URL: [view here](https://dhawalrath.github.io/)
+- Live Site URL: [view here](https://dhawalrath.github.io/single-price-grid/)
 
 ## My process
 
