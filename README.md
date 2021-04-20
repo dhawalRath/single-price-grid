@@ -12,6 +12,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
+## Overview
 
 ### Screenshot
 
@@ -22,6 +23,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 ### Links
 
 - Live Site URL: [view here](https://dhawalrath.github.io/single-price-grid/)
+- Solution URL: [check here](https://www.frontendmentor.io/solutions/single-price-component-using-css-grid-o_6XsZ0z5)
 
 ## My process
 
