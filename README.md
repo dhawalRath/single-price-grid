@@ -5,7 +5,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 ### :point_right: [Live Site](https://dhawalrath.github.io/single-price-grid/)
 
 ## :camera: Overview
-![Desktop](./screenshots/desktop.png)
+![ss](./ss.png)
 
 ## :muscle: Built With
 
